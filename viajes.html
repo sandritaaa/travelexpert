@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viajes - Travel Experts</title>
+    
+    <!-- Begin Bootstrap style css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- End Bootstrap style css -->
+
+    <!-- Begin Fancybox style css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <!-- End Begin Facybox style css -->
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+
+   
+
+  </head>
+  <body class="site">
+    <header class="mb-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Travel Experts</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-content container">
+      <h2 class="text-center mb-4">Nuestros destinos</h2>
+
+      <div class="row g-4 text-center">
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=1" title="Destino 1">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=1" alt="Destino 1" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=2" title="Destino 2">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=2" alt="Destino 2" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=3" title="Destino 3">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=3" alt="Destino 3" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=4" title="Destino 4">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=4" alt="Destino 4" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=5" title="Destino 5">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=5" alt="Destino 5" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=6" title="Destino 6">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=6" alt="Destino 6" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=7" title="Destino 7">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=7" alt="Destino 7" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=8" title="Destino 8">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=8" alt="Destino 8">
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center mt-4 bg-body-secondary p-2">
+      <p class="mt-3">&copy; Travel Experts - 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+    <script>
+      $(document).ready(function(){
+        $("a.fancybox").fancybox({
+          transitionIn: 'elastic',
+          transitionOut: 'elastic',
+          speedIn: 600,
+          speedOut: 200,
+          overlayShow: false
+        })
+      })
+    </script>
+    <script src="js/validaciones.js"></script>
+
+
+  </body>
+</html>
